@@ -54,12 +54,12 @@
     "description": "A selection of projects that showcase my expertise and passion for creating impactful digital experiences",
     "viewProject": "View Project",
     "viewAll": "View All on GitHub",
-    "neobank": {
-      "title": "NeoBank Dashboard",
+    "sajed": {
+      "title": "sajed Dashboard",
       "desc": "A next-generation fintech dashboard with real-time analytics, AI-powered insights, and seamless transaction management."
     },
-    "artisan": {
-      "title": "Artisan Marketplace",
+    "mazraee": {
+      "title": "mazraee app",
       "desc": "An e-commerce platform connecting artisans with customers worldwide. Features include 3D product previews and AR try-on."
     },
     "synapse": {

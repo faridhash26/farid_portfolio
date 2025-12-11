@@ -20,7 +20,7 @@ export default async function Home({
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Navbar />
-      <main className="mt-23">
+      <main className="mt-20">
         <Hero />
         <About />
         <Skills />

@@ -64,8 +64,8 @@ export const Skills = () => {
     {
       title: t("backend"),
       skills: [
-        { name: "Node.js", level: 90, icon: "🟢" },
-        { name: "PostgreSQL", level: 85, icon: "🐘" },
+        { name: "Laravel", level: 90, icon: "🟢" },
+        { name: "mysql", level: 85, icon: "🐘" },
         { name: "GraphQL", level: 80, icon: "◈" },
         { name: "REST APIs", level: 92, icon: "🔌" },
       ],
@@ -75,7 +75,6 @@ export const Skills = () => {
       skills: [
         { name: "Git / GitHub", level: 95, icon: "📦" },
         { name: "Docker", level: 75, icon: "🐳" },
-        { name: "AWS / Vercel", level: 80, icon: "☁️" },
         { name: "Figma", level: 85, icon: "🎯" },
       ],
     },

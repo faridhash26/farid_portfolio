@@ -11,7 +11,7 @@ interface Project {
   tags: string[];
   color: string;
   link: string;
-  github: string;
+  github: string | null;
 }
 
 const ProjectCard = ({
@@ -50,15 +50,18 @@ const ProjectCard = ({
             0{index + 1}
           </span>
           <div className="flex gap-2">
-            <motion.a
-              href={project.github}
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
-              className="p-2 rounded-full bg-secondary/50 hover:bg-secondary text-muted-foreground hover:text-foreground transition-colors"
-              aria-label="View code"
-            >
-              <Github size={16} />
-            </motion.a>
+            {project.github && (
+              <motion.a
+                href={project.github}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+                className="p-2 rounded-full bg-secondary/50 hover:bg-secondary text-muted-foreground hover:text-foreground transition-colors"
+                aria-label="View code"
+              >
+                <Github size={16} />
+              </motion.a>
+            )}
+
             <motion.a
               href={project.link}
               whileHover={{ scale: 1.1 }}
@@ -90,7 +93,8 @@ const ProjectCard = ({
           ))}
         </div>
 
-        <motion.div
+        <motion.a
+          href={project.link}
           initial={{ opacity: 0, x: isRTL ? 10 : -10 }}
           animate={{
             opacity: isHovered ? 1 : 0,
@@ -100,7 +104,7 @@ const ProjectCard = ({
         >
           {viewProjectText}{" "}
           {isRTL ? <ArrowLeft size={14} /> : <ArrowRight size={14} />}
-        </motion.div>
+        </motion.a>
       </div>
     </motion.article>
   );
@@ -116,39 +120,21 @@ export const Projects = () => {
   const projects: Project[] = [
     {
       id: 1,
-      title: t("neobank.title"),
-      description: t("neobank.desc"),
-      tags: ["React", "TypeScript", "D3.js", "Node.js"],
+      title: t("sajed.title"),
+      description: t("sajed.desc"),
+      tags: ["Angular", "TypeScript", "Bootstrap", "Laravel"],
       color: "from-primary/20 to-accent/20",
-      link: "#",
-      github: "#",
+      link: "https://sajed.msrt.ir/",
+      github: null,
     },
     {
       id: 2,
-      title: t("artisan.title"),
-      description: t("artisan.desc"),
-      tags: ["Next.js", "Three.js", "Stripe", "PostgreSQL"],
+      title: t("mazraee.title"),
+      description: t("mazraee.desc"),
+      tags: ["Next.js", "D3.js", "Django"],
       color: "from-accent/20 to-primary/20",
-      link: "#",
-      github: "#",
-    },
-    {
-      id: 3,
-      title: t("synapse.title"),
-      description: t("synapse.desc"),
-      tags: ["React", "Python", "OpenAI", "FastAPI"],
-      color: "from-primary/30 to-transparent",
-      link: "#",
-      github: "#",
-    },
-    {
-      id: 4,
-      title: t("ecotrack.title"),
-      description: t("ecotrack.desc"),
-      tags: ["React Native", "GraphQL", "MongoDB", "Charts"],
-      color: "from-accent/20 to-primary/10",
-      link: "#",
-      github: "#",
+      link: "#https://panel.mazraeapp.com/",
+      github: null,
     },
   ];
 
@@ -193,7 +179,7 @@ export const Projects = () => {
           className="text-center mt-12"
         >
           <a
-            href="https://github.com/faridhashemian"
+            href="https://www.linkedin.com/in/farid-hash/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 text-sm font-medium rounded-full glass border border-border hover:border-primary/50 transition-all hover-lift"
