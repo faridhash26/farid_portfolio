@@ -75,29 +75,41 @@
     "title": "Journey",
     "heading1": "Experience &",
     "heading2": "Education",
-    "senior": {
-      "title": "Senior Frontend Developer",
-      "company": "TechCorp Innovation",
-      "period": "2022 - Present",
-      "desc": "Leading the frontend architecture for enterprise SaaS products. Implemented design systems and mentored junior developers."
-    },
-    "fullstack": {
+    "ministry": {
       "title": "Full-Stack Developer",
-      "company": "StartUp Labs",
-      "period": "2020 - 2022",
-      "desc": "Built scalable web applications from concept to deployment. Collaborated directly with stakeholders to deliver MVPs."
+      "company": "Ministry of Science, Research and Technology",
+      "period": "Sep 2024 – Present",
+      "desc": "Developed internal systems for various departments using AngularJS and Laravel."
     },
-    "frontend": {
-      "title": "Frontend Developer",
-      "company": "Digital Agency Plus",
-      "period": "2019 - 2020",
-      "desc": "Created responsive websites and interactive experiences for diverse clients across industries."
+    "lotus": {
+      "title": "React Developer",
+      "company": "Lotus Futurists",
+      "period": "Jun 2023 – Sep 2024",
+      "desc": "Built interactive map-based dashboards using React and Leaflet."
     },
-    "education": {
-      "title": "B.S. Computer Science",
-      "company": "Tech University",
-      "period": "2015 - 2019",
-      "desc": "Graduated with honors. Focus on web technologies and human-computer interaction."
+    "boxit": {
+      "title": "React Developer",
+      "company": "Boxit",
+      "period": "Jun 2022 – Jun 2023",
+      "desc": "Developed and maintained admin panels with advanced mapping features."
+    },
+    "taraz": {
+      "title": "Web Developer",
+      "company": "Taraz System",
+      "period": "Mar 2021 – Nov 2022",
+      "desc": "Implemented responsive user interfaces with React and SASS."
+    },
+    "masters": {
+      "title": "Master's Degree, Information Technology",
+      "company": "Islamic Azad University",
+      "period": "Sep 2021 – Apr 2024",
+      "desc": "Advanced studies in information systems and modern web development."
+    },
+    "bachelor": {
+      "title": "Bachelor's Degree, Information Technology",
+      "company": "Islamic Azad University",
+      "period": "2015 – 2021",
+      "desc": "Core computer science, databases, networking, and web development fundamentals."
     }
   },
   "contact": {
