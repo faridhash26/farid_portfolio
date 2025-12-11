@@ -1,0 +1,132 @@
+{
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "experience": "Experience",
+    "contact": "Contact",
+    "letsTalk": "Let's Talk"
+  },
+  "hero": {
+    "available": "Available for new projects",
+    "creative": "Creative",
+    "developer": "Developer",
+    "designer": "& Designer",
+    "description": "I craft digital experiences that push boundaries. Full-stack developer specializing in React, Node.js, and creative web technologies.",
+    "viewWork": "View My Work",
+    "getInTouch": "Get In Touch",
+    "scroll": "Scroll"
+  },
+  "about": {
+    "title": "About Me",
+    "heading1": "Turning Ideas Into",
+    "heading2": "Digital Reality",
+    "p1": "I'm a passionate full-stack developer with over 5 years of experience creating innovative digital solutions. My journey began with a curiosity for how things work on the web, and has evolved into a deep expertise in modern web technologies.",
+    "p2": "I believe in the power of clean code, intuitive design, and seamless user experiences. Every project is an opportunity to push boundaries and create something truly exceptional.",
+    "cleanCode": "Clean Code",
+    "cleanCodeDesc": "Writing maintainable, scalable code",
+    "designThinking": "Design Thinking",
+    "designThinkingDesc": "User-centered design approach",
+    "fastDelivery": "Fast Delivery",
+    "fastDeliveryDesc": "Efficient workflows, quick turnaround",
+    "passionDriven": "Passion Driven",
+    "passionDrivenDesc": "Love for crafting experiences",
+    "yearsExp": "Years Experience",
+    "projects": "Projects Completed",
+    "clients": "Happy Clients",
+    "dedication": "Dedication",
+    "name": "Farid Hashemian",
+    "role": "Full-Stack Developer"
+  },
+  "skills": {
+    "title": "Expertise",
+    "heading1": "Skills &",
+    "heading2": "Technologies",
+    "description": "A comprehensive toolkit refined over years of building digital products",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "tools": "Tools & Others"
+  },
+  "projects": {
+    "title": "Portfolio",
+    "heading1": "Featured",
+    "heading2": "Projects",
+    "description": "A selection of projects that showcase my expertise and passion for creating impactful digital experiences",
+    "viewProject": "View Project",
+    "viewAll": "View All on GitHub",
+    "neobank": {
+      "title": "NeoBank Dashboard",
+      "desc": "A next-generation fintech dashboard with real-time analytics, AI-powered insights, and seamless transaction management."
+    },
+    "artisan": {
+      "title": "Artisan Marketplace",
+      "desc": "An e-commerce platform connecting artisans with customers worldwide. Features include 3D product previews and AR try-on."
+    },
+    "synapse": {
+      "title": "Synapse AI",
+      "desc": "An AI-powered productivity tool that learns your workflow and automates repetitive tasks intelligently."
+    },
+    "ecotrack": {
+      "title": "EcoTrack",
+      "desc": "Sustainability tracking app helping businesses monitor and reduce their carbon footprint with actionable insights."
+    }
+  },
+  "experience": {
+    "title": "Journey",
+    "heading1": "Experience &",
+    "heading2": "Education",
+    "senior": {
+      "title": "Senior Frontend Developer",
+      "company": "TechCorp Innovation",
+      "period": "2022 - Present",
+      "desc": "Leading the frontend architecture for enterprise SaaS products. Implemented design systems and mentored junior developers."
+    },
+    "fullstack": {
+      "title": "Full-Stack Developer",
+      "company": "StartUp Labs",
+      "period": "2020 - 2022",
+      "desc": "Built scalable web applications from concept to deployment. Collaborated directly with stakeholders to deliver MVPs."
+    },
+    "frontend": {
+      "title": "Frontend Developer",
+      "company": "Digital Agency Plus",
+      "period": "2019 - 2020",
+      "desc": "Created responsive websites and interactive experiences for diverse clients across industries."
+    },
+    "education": {
+      "title": "B.S. Computer Science",
+      "company": "Tech University",
+      "period": "2015 - 2019",
+      "desc": "Graduated with honors. Focus on web technologies and human-computer interaction."
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "heading1": "Let's Work",
+    "heading2": "Together",
+    "description": "Have a project in mind? I'd love to hear about it. Let's create something amazing together.",
+    "email": "Email",
+    "location": "Location",
+    "locationValue": "San Francisco, CA",
+    "phone": "Phone",
+    "name": "Name",
+    "namePlaceholder": "Your name",
+    "emailPlaceholder": "your@email.com",
+    "message": "Message",
+    "messagePlaceholder": "Tell me about your project...",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "sent": "Message Sent!",
+    "successTitle": "Message sent!",
+    "successDesc": "Thanks for reaching out. I'll get back to you soon.",
+    "errorName": "Name must be at least 2 characters",
+    "errorEmail": "Please enter a valid email",
+    "errorMessage": "Message must be at least 10 characters"
+  },
+  "footer": {
+    "tagline": "Crafting digital experiences that push boundaries",
+    "rights": "All rights reserved.",
+    "madeWith": "Made with",
+    "using": "using React & TailwindCSS"
+  }
+}
