@@ -21,8 +21,8 @@ export const Contact = () => {
     {
       icon: Mail,
       label: t("email"),
-      value: "hello@farid.dev",
-      href: "mailto:hello@farid.dev",
+      value: "hello@faridhashemian",
+      href: "mailto:hello@faridhashemian",
     },
     {
       icon: MapPin,

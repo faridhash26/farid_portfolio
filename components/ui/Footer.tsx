@@ -39,8 +39,8 @@ export const Footer = () => {
               href="#"
               className="text-xl font-bold tracking-tight inline-block"
             >
-              <span className="text-gradient">F</span>
-              <span className="text-foreground">arid.dev</span>
+              <span className="text-gradient">Farid</span>
+              <span className="text-foreground">Hashemian</span>
             </a>
             <p className="text-sm text-muted-foreground mt-2 max-w-xs">
               {tFooter("tagline")}

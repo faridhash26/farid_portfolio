@@ -45,8 +45,8 @@ export const Navbar = () => {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          <span className="text-gradient">F</span>
-          <span className="text-foreground">arid.dev</span>
+          <span className="text-gradient">Farid</span>
+          <span className="text-foreground">Hashemian</span>
         </motion.a>
 
         {/* Desktop Navigation */}
