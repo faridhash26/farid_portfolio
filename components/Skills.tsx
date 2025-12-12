@@ -2,16 +2,31 @@
 import { useTranslations } from "next-intl";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import {
+  Code2,
+  FileCode2,
+  Paintbrush,
+  Sparkles,
+  Cpu,
+  Database,
+  Zap,
+  GitFork,
+  Container,
+  Figma,
+  GitBranch,
+  LucideIcon,
+} from "lucide-react";
 
 const SkillBar = ({
   skill,
   index,
   isInView,
 }: {
-  skill: { name: string; level: number; icon: string };
+  skill: { name: string; level: number; icon: LucideIcon };
   index: number;
   isInView: boolean;
 }) => {
+  const IconComponent = skill.icon;
   return (
     <motion.div
       initial={{ opacity: 0, x: -20 }}
@@ -21,7 +36,9 @@ const SkillBar = ({
     >
       <div className="flex items-center justify-between mb-2">
         <div className="flex items-center gap-2">
-          <span className="text-lg">{skill.icon}</span>
+          <span className="text-lg">
+            <IconComponent className="h-5 w-5" />
+          </span>
           <span className="font-medium text-sm">{skill.name}</span>
         </div>
         <span className="text-xs text-muted-foreground font-mono">
@@ -55,27 +72,28 @@ export const Skills = () => {
     {
       title: t("frontend"),
       skills: [
-        { name: "React / Next.js", level: 95, icon: "⚛️" },
-        { name: "TypeScript", level: 90, icon: "🔷" },
-        { name: "TailwindCSS", level: 95, icon: "🎨" },
-        { name: "Framer Motion", level: 85, icon: "✨" },
+        { name: "React / Next.js", level: 95, icon: Code2 },
+        { name: "TypeScript", level: 90, icon: FileCode2 },
+        { name: "TailwindCSS", level: 95, icon: Paintbrush },
+        { name: "Framer Motion", level: 85, icon: Sparkles },
       ],
     },
     {
       title: t("backend"),
       skills: [
-        { name: "Laravel", level: 90, icon: "🟢" },
-        { name: "mysql", level: 85, icon: "🐘" },
-        { name: "GraphQL", level: 80, icon: "◈" },
-        { name: "REST APIs", level: 92, icon: "🔌" },
+        { name: "Laravel", level: 90, icon: Cpu },
+        { name: "PostgreSQL", level: 85, icon: Database },
+        { name: "MySQL", level: 85, icon: Database },
+        { name: "GraphQL", level: 80, icon: Zap },
+        { name: "REST APIs", level: 92, icon: GitBranch },
       ],
     },
     {
       title: t("tools"),
       skills: [
-        { name: "Git / GitHub", level: 95, icon: "📦" },
-        { name: "Docker", level: 75, icon: "🐳" },
-        { name: "Figma", level: 85, icon: "🎯" },
+        { name: "Git / GitHub", level: 95, icon: GitFork },
+        { name: "Docker", level: 75, icon: Container },
+        { name: "Figma", level: 85, icon: Figma },
       ],
     },
   ];
