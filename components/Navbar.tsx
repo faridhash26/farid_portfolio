@@ -87,12 +87,13 @@ export const Navbar = () => {
             transition={{ delay: (navLinks.length + 1) * 0.1 }}
           >
             <a
-              href="#contact"
+              href="/faridhashemain_resume.pdf"
+              download="faridhashemain_resume.pdf"
               className={`${
                 isRTL ? "mr-2" : "ml-2"
               } px-5 py-2.5 text-sm font-semibold rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-all glow-sm hover:glow`}
             >
-              {t("letsTalk")}
+              {t("resumeDownload")}
             </a>
           </motion.li>
         </ul>
