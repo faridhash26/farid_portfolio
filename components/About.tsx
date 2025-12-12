@@ -3,8 +3,9 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Code2, Palette, Zap, Heart } from "lucide-react";
+import { Code2, Palette, Zap, Heart, Sparkles } from "lucide-react";
 import { useTranslations, useLocale } from "next-intl";
+import Image from "next/image";
 
 export const About = () => {
   const ref = useRef(null);
@@ -70,23 +71,32 @@ export const About = () => {
             className="relative"
           >
             <div className="relative aspect-square max-w-md mx-auto">
-              {/* Decorative elements */}
+              {/* Decorative rotated glow background */}
               <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-primary/20 via-accent/10 to-transparent rotate-6 animate-pulse-glow" />
+
+              {/* Main decorative frame */}
               <div className="absolute inset-0 rounded-3xl glass border border-primary/20 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5" />
-                <div className="absolute inset-4 rounded-2xl bg-secondary/50 flex items-center justify-center">
-                  <div className="text-center p-6">
-                    <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-5xl font-bold text-primary-foreground">
-                      {t("name")
-                        .split(" ")
-                        .map((n) => n[0])
-                        .join("")
-                        .toUpperCase()}
-                    </div>
-                    <p className="text-lg font-medium">{t("name")}</p>
-                    <p className="text-sm text-muted-foreground">{t("role")}</p>
-                  </div>
-                </div>
+
+                {/* ✅ عکس مستقیم در فضای داخلی — بدون دایره اضافه */}
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={isInView ? { opacity: 1 } : {}}
+                  transition={{ delay: 0.4, duration: 0.5 }}
+                  className="absolute inset-4 rounded-2xl overflow-hidden"
+                >
+                  {/* Optional semi-transparent overlay for better text contrast (if needed later) */}
+                  {/* <div className="absolute inset-0 bg-black/5" /> */}
+
+                  <Image
+                    src="/profile.jpeg"
+                    alt={t("name")}
+                    fill
+                    className="object-cover"
+                    quality={90}
+                    priority
+                  />
+                </motion.div>
               </div>
             </div>
           </motion.div>
